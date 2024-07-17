@@ -24,7 +24,10 @@
         rpc GetUser (UserId) returns (User);
         rpc UpdateUser (User) returns (User);
         rpc DeleteUser (UserId) returns (Response);
+        rpc GetAllUsers (Empty) returns (UserList);
     }
+
+    message Empty {}
 
     message Response{
     string message = 1;
